@@ -1,0 +1,23 @@
+{
+  "inferences": [
+    "1P_Custom_At_Home_Hub_Listeners",
+    "1P_Custom_Auto_Toyota",
+    "1P_Custom_Discovery_Streamers",
+    "1P_Custom_Meditation",
+    "1P_Custom_Pets_Playlist_Streamers",
+    "1P_Custom_T-Mobile_Switchers",
+    "1P_Custom_iPhone_11_Users",
+    "1P_Social Streamers_Broad",
+    "podcast-audience-segmentation-rules-engagement-daypart-afternoon",
+    "podcast-audience-segmentation-rules-engagement-daypart-evening",
+    "podcast-audience-segmentation-rules-engagement-daypart-late-evening",
+    "podcast-audience-segmentation-rules-engagement-daypart-morning",
+    "podcast-audience-segmentation-rules-engagement-daypart-night",
+    "podcast-audience-segmentation-rules-engagement-device-mobile",
+    "podcast-audience-segmentation-rules-engagement-diversity-low",
+    "podcast-audience-segmentation-rules-engagement-frequency-medium",
+    "podcast-audience-segmentation-rules-format-length-long",
+    "podcast-audience-segmentation-rules-format-length-medium",
+    "podcast-audience-segmentation-rules-format-length-short"
+  ]
+}

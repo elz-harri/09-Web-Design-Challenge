@@ -1,128 +1,100 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+
 <head>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Cloudiness</title>
+  <title>Cloudiness Visualization Dashboard</title>
 
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css" media="screen">
+  <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Latitude</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-            <a class="dropdown-item" href="humidity.html">Humidity</a>
-            <a class="dropdown-item" href="temp.html">Max Temperatures</a>
-            <a class="dropdown-item" href="wind.html">Wind-Speed</a>
-          </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="comparison.html">Comparison</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Data.html">Data</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  
-  <div class="container">
-    <section class="row">
-      <div class="col-md-8">
-        <article class="description">
-          <h2 class="headline"> Latitude vs Cloudiness </h2>
-          <hr />
-          <img src="Assets/images/cloudiness.png" alt="lat_vs_clouds" Align="Left" class = "img-responsive" />
-          <p class="blurb"> We collected data from multiple cities to see if cloudiness changed based on latitude. 
-            There does not seem to be a strong correlation.
-        </article>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <section id = "viz_images">
-        <div class= "viz_image-container">
-            <h2 class= "rightsidenav">Visualizations</h2>
-            <hr /> 
-            <div class="img">
-                <a class="viz_img" href="temp.html"><img src="Assets/Images/temp.png" alt="Latitude Vs Max Temperature" ></a>
-                <a class="viz_img" href="humidity.html"><img src="Assets/Images/humidity.png" alt="Latitude Vs Humidity"></a>
-                <a class="viz_img" href="cloudiness.html"><img src="Assets/Images/cloudiness.png" alt="Latitude Vs Cloudiness"></a>
-                <a class="viz_img" href="windspeed.html"><img src="Assets/Images/windspeed.png" alt="Latitude Vs Windspeed"></a>
-            </div>
-          </div>
-      </section>
-</div>
-      <!-- Start of Visualizations imageNav Area
-      <div class="col-md-4">
-        <section id="viz_images">
-          <div class="viz_img-container">
-            <h2 class="rightsidenav">Visualizations</h2>
-            <hr />
-            <div id="img">
-              <div class="row">
-                <div class="col-md-6">
-                  <a href="temp.html"><img src="assets/images/temp.png" alt="Latitude vs. Max Temperature" 
-                      class="imageNav-photo img-thumbnail"></a>
-                </div>
-                <div class="col-md-6">
-                  <a href="humidity.html"><img src="assets/images/humidity.png" alt="Latitude vs. Humidity"
-                    class="imageNav-photo img-thumbnail"></a>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="temp.html">Max Temperatures</a>
+                <a class="dropdown-item" href="wind.html">Wind Speed</a>
               </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <a href="cloudiness.html"><img src="assets/images/cloudiness.png" alt="Latitude vs. Cloudiness"
-                      class="imageNav-photo img-thumbnail"></a>
-                </div>
-                <div class="col-md-6">
-                  <a href="wind.html"><img src="assets/images/windspeed.png" alt="Latitude vs. Wind Speed"
-                      class="imageNav-photo img-thumbnail"></a>
-                </div>
-              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparisons</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+    <div class="container-fluid">
+        <section class="row">
+            <div class="col-md-6">   
+                <article class="description">
+                    <h2 class="headline"> Summary: Latitude Versus Cloudiness</h2> 
+                    <hr class = "hr-description"/>
+                    <img src="Assets/images/cloudiness.png" alt="Temp_vs_Clouds" Align="center" class = "img-responsive">
+                       <p>After analyzing the data and creating the scatterplot, it appears there is no correlation
+                         between latitude and clooudiness.
+                       </p> 
+                  </article>
             </div>
-          </div>
-        </section> -->
-        <!-- End of the Visualizations imageNav Area -->
 
-      </div>
-    </section>
-  </div>
-  <!-- End of container -->
+            <div class="col-md-6">
+              <section id="imageNav-area">
+                <div class="imageNav-content">
+                  <h2 class="imageNav-header">Visualizations</h2>
+                  <hr />
+                  <div id="images">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href="temp.html"><img src="assets/images/temp.png" alt="Latitude vs. Max Temperature"
+                            class="imageNav-photo img-thumbnail img-fluid"></a>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="humidity.html"><img src="assets/images/humidity.png" alt="Latitude vs. Humidity"
+                            class="imageNav-photo img-fluid"></a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href="cloudiness.html"><img src="assets/images/cloudiness.png" alt="Latitude vs. Cloudiness"
+                            class="imageNav-photo img-thumbnail"></a>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="wind.html"><img src="assets/images/windspeed.png" alt="Latitude vs. Wind Speed"
+                            class="imageNav-photo img-thumbnail"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
 
-  <!-- Start of footer -->
-  <footer class="footer navbar-fixed-bottom">
-    <div class="two-toned-footer-color"></div>
-    <p class="text-muted text-muted-footer text-right">
-      &copy; Copyright GA Tech Data Visualization Bootcamp 2020
-    </p>
-  </footer>
-  <!-- End of footer -->
 
-  <!-- jQuery CDN -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-    crossorigin="anonymous"></script></body>
 
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
